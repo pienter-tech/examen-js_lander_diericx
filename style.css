@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none !important;
+}
+
+.play-zone-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.play-zone {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 5px solid darkgoldenrod;
+  background-color: goldenrod;
+  padding: 20px;
+}
+
+.play-zone-title {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 35px;
+}
+
+.selection-container {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  margin: 0 10px;
+}
+
+.new-game-container {
+  text-align: center;
+}
+
+.game-message-container {
+  padding: 20px;
+}
+
+.game-message {
+  text-align: center;
+}

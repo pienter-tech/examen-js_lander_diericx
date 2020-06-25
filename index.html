@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Rock Paper Scissors
+            </h1>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="play-zone-container">
+            <div id="play-zone-user" class="play-zone">
+                <img src="images/paper.png">
+                <h2 class="play-zone-title">Friendly user (<span id="play-zone-user-counter">0</span>)</h2>
+            </div>
+            <div id="play-zone-ai" class="play-zone">
+                <img src="images/rock.png">
+                <h2 class="play-zone-title">Evil AI (<span id="play-zone-ai-counter">0</span>)</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="selection-container hide">
+            <button data-selection="rock" class="button is-link selection">Rock</button>
+            <button data-selection="paper" class="button is-success selection">Paper</button>
+            <button data-selection="scissors" class="button is-warning selection">Scissors</button>
+        </div>
+
+        <div class="new-game-container">
+            <button id="new-game-btn" class="button is-primary">Start new game</button>
+        </div>
+        <div class="game-message-container hide">
+            <p id="user-won-message" class="game-message hide">You won, well done.</p>
+            <p id="ai-won-message" class="game-message hide">Our genius AI won, it will probably rule the
+                world.</p>
+            <p id="draw-message" class="game-message">It's a draw, try again.</p>
+        </div>
+    </div>
+</section>
+
+<script src="__script.js"></script>
+</body>
+</html>
